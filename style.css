@@ -508,7 +508,7 @@ img{
     border: 1px solid rgba(59, 130, 246, .2);
     padding: 2rem;
     border-radius: 1rem;
-    color:white;
+    
 }
 #resume .card p{
     color: var(--text);
@@ -541,7 +541,7 @@ img{
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
-    color:white;
+    
 }
 #contact .card p{
     color: var(--text);
@@ -619,7 +619,7 @@ img{
     .certificates,
     .blog,
     .resume,
-    .contact{
+    .contact {
         width: 100%;
     }
     .about .card,
@@ -757,7 +757,7 @@ img{
     .certificates,
     .blog,
     .resume,
-    .contact{
+    .contact {
         padding: 0;
     }
 }
