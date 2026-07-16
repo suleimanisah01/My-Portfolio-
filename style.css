@@ -451,19 +451,18 @@ img{
     padding: 1.5rem;
     border-radius: 15px;
     border: 1px solid #1f2937;
-
     transition: .3s;
-    
 }
 #media .yt-grid{
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     width: 100%;
 }
 
 .youtube-card{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     background: rgba(255,255,255,.03);
     border: 1px solid #1f2937;
     border-radius:15px ;
@@ -473,6 +472,7 @@ img{
     text-decoration: none;
 }
 
+
 .youtube-card:hover{
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
@@ -480,20 +480,9 @@ img{
 
 .youtube-card img{
     display: block;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     width: 100%;
     height: auto;
-}
-
-.youtube-card-body{
-    padding: 1rem;
-}
-
-.youtube-card-body h4{
-    margin: 0;
-    color: var(--text);
-    font-size: 1rem;
-}
-
     
 
 
