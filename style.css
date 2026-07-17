@@ -134,9 +134,15 @@ nav.open .links {
 
 /* BUTTONS*/
 img{
-    width: 300px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.picture img{
+    width: min(300px, 100%);
+    height: auto;
     border-radius: 50%;
+    object-fit: cover;
 }
 .btn{
     display: inline-block;
@@ -403,6 +409,19 @@ img{
     justify-items: center;
     justify-content: center;
 }
+
+
+
+.youtube-card-body{
+    padding: 1rem;
+}
+
+.youtube-card-body h4{
+    margin: 0;
+    color: var(--text);
+    font-size: 1rem;
+}
+
 /* MEDIA SECTION */
 
 #media{
@@ -412,8 +431,7 @@ img{
     padding: 4rem 1rem 2rem;
 }
 
-#media
-.media .card h3{
+#media .media .card h3{
     color: var(--accent);
     text-align: center;
 } 
@@ -424,10 +442,11 @@ img{
 }
 #media .media{
     width: min(80%, 1200px);
-    display:grid;
+    display: grid;
     gap: 2rem;
 }
 #media .grid{
+    display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
@@ -454,7 +473,7 @@ img{
     transition: .3s;
 }
 #media .yt-grid{
-    display: block;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     width: 100%;
@@ -462,6 +481,7 @@ img{
 
 .youtube-card{
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     background: rgba(255,255,255,.03);
     border: 1px solid #1f2937;
@@ -480,11 +500,9 @@ img{
 
 .youtube-card img{
     display: block;
-     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     width: 100%;
     height: auto;
-    
-
+}
 
 /* RESUME SECTION */
 #resume{
@@ -508,7 +526,6 @@ img{
     border: 1px solid rgba(59, 130, 246, .2);
     padding: 2rem;
     border-radius: 1rem;
-    
 }
 #resume .card p{
     color: var(--text);
@@ -541,7 +558,6 @@ img{
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
-    
 }
 #contact .card p{
     color: var(--text);
@@ -607,7 +623,7 @@ img{
         border-bottom: none;
     }
     .hero{
-        min-height:100vh auto;
+        min-height: auto;
         padding: 5rem 1rem 3rem;
     }
     .container p{
@@ -619,12 +635,13 @@ img{
     .certificates,
     .blog,
     .resume,
-    .contact {
+    .contact{
         width: 100%;
     }
     .about .card,
     .resume .card,
-    .contact .card{
+    .contact .card,
+    .yt-grid .youtube-card{
         width: 100%;
     }
 }
@@ -633,6 +650,7 @@ img{
     nav{
         height: auto;
         padding: 1rem 0;
+        
     }
     nav .container{
         flex-wrap: wrap;
@@ -757,7 +775,7 @@ img{
     .certificates,
     .blog,
     .resume,
-    .contact {
+    .contact{
         padding: 0;
     }
 }
