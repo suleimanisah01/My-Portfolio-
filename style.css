@@ -473,14 +473,14 @@ img{
     transition: .3s;
 }
 #media .yt-grid{
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     width: 100%;
 }
 
 .youtube-card{
-    display: block;
+    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     background: rgba(255,255,255,.03);
