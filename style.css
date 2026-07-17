@@ -480,7 +480,7 @@ img{
 }
 
 .youtube-card{
-    display: grid;
+    display: block;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     background: rgba(255,255,255,.03);
